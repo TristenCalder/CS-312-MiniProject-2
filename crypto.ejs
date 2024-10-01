@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+
+<header>
+    <h1>CS312 Mini Project 2 - Results Page</h1>
+</header>
+
+<body>
+
+<!-- Display the crypto price from the api -->
+<div class="box">
+    <h1>Cryptocurrency Price</h1>
+    <p>Conversion: <%= data.symbol %></p>
+    <p>Current Price: $<%= data.last_trade_price %> (USD)</p>
+</div>
+
+<!-- Display the joke from the api -->
+<div class="box">
+    <h2>Joke</h2>
+    <p><%= joke.joke %></p>
+</div>
+
+</body>
+</html>
